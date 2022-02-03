@@ -1,0 +1,68 @@
+{
+    "products": [{
+            "id": 1,
+            "img": "1.png",
+            "name": "Guasones",
+            "description": "Año 2000",
+            "price": 2500,
+            "class": "vinyl"
+        },
+        {
+            "id": 2,
+            "img": "animales.jpg",
+            "name": "Con la casa en orden",
+            "description": " Año 2001",
+            "price": 1300,
+            "class": "vinyl"
+        },
+        {
+            "id": 3,
+            "img": "2.jpg",
+            "name": "Como animales",
+            "description": "Año 2003",
+            "price": 1100,
+            "class": "vinyl"
+        },
+        {
+            "id": 4,
+            "img": "3.jpg",
+            "name": "Todo Rojo",
+            "description": "Año 2005",
+            "price": 1700,
+            "class": "vinyl"
+        },
+        {
+            "id": 5,
+            "img": "4.png",
+            "name": "El Rock de mi vida",
+            "description": "Año 2007",
+            "price": 850,
+            "class": "cd"
+        },
+        {
+            "id": 6,
+            "img": "5.jpg",
+            "name": "Esclavo",
+            "description": "Año 2008",
+            "price": 500,
+            "class": "cd"
+        },
+        {
+            "id": 7,
+            "img": "6.jpg",
+            "name": "Parque de depreciones",
+            "description": "Año 2011",
+            "price": 650,
+            "class": "cd"
+        },
+        {
+            "id": 8,
+            "img": "7.png",
+            "name": "Locales Calientes",
+            "description": "Año 2014",
+            "price": 450,
+            "class": "cd"
+        }
+    ]
+}
+

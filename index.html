@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografia de Guasones</title>
+
+
+
+    <script src="https://kit.fontawesome.com/04f7d0d100.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="icon" href="img/guasones.jpg" type="image/jpg" />
+    <link rel="shortcut icon" href="img/guasones.jpg" type="image/jpg" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+
+
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <a href="index.html">
+            <h2 class="nav-title"> Guasones </h2>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#footer">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="dropdown">
+                <i class="fas fa-bars dropbtn"></i>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Inicio</a>
+                    <a href="#products">Productos</a>
+                    <a href="#contact">Contacto</a>
+                    <a href="#footer">Nosotros</a>
+                </div>
+            </div>
+            <button class="header-button" id="openMenu">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cartNumber">0</span>
+            </button>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closeMenu">&times;</a>
+            <p class="titleCart">Tu carrito de compras:</p>
+            <section id="itemCart"></section>
+            <hr class="hr">
+            <div class="divPrice">
+                <p class="totalPrice">Total:</p>
+                <p class="totalPrice">$0</p>
+            </div>
+            <div class="buttonsCart">
+                <button class="btnCart" id="btnBuy">Finalizar compra</button>
+                <button class="btnCart" id="btnEmpty">Vaciar carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="margin-top"></div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/guasones1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/guasones2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/guasones3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="main-top">
+
+            <section class="main-article-top" id="products">
+            </section>
+
+            <section class="main-article-bottom">
+            </section>
+
+        </div>
+
+        <div class="section-contact" id="contact">
+            <form action="" id="form">
+                <h1>Contactanos</h1>
+                <p class="text-contact">Si deseas consultar mayor información sobre nuestros productos o tienes alguna
+                    duda al respecto, no dudes en contactarnos y uno de nuestros asesores te ayudara a la brevedad.
+                </p>
+                <div class="main-contact">
+                    <div class="inputs-w">
+                        <input type="text" name="name" id="name" placeholder="Tú nombre..." class="input-contact">
+                        <div class="alert erName"></div>
+                        <input type="email" name="mail" id="mail" placeholder="Tú email..." class="input-contact">
+                        <div class="alert erEmail"></div>
+                        <input type="number" name="tel" id="tel" placeholder="Tú número de telefono..."
+                            class="input-contact">
+                        <div class="alert erTel"></div>
+                    </div>
+                    <div class="inputs-w1">
+                        <input type="text" name="msg" id="msg" placeholder="Dejanos tú mensaje..." class="input-submit">
+                        <div class="alert erMsg"></div>
+                    </div>
+                </div>
+                <div class="submit-div">
+                    <input type="submit" name="button-submit" id="button-submit" class="button-submit">
+                </div>
+            </form>
+        </div>
+
+        <section class="info">
+            <div class="border-info">
+                <i class="fas fa-shipping-fast icon-info"></i>
+                <p class="info-text text-light">Envio gratis en compras superiores a $999</p>
+            </div>
+            <div class="border-info">
+                <i class="fas fa-credit-card icon-info"></i>
+                <p class="info-text text-light ">3 y 6 cuotas sin interés con tarjetas bancarias</p>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=541126843296&amp;text=%C2%A1Hola%21+Estoy+viendo+los+productos+en+GuasonesShop+y+quiero+m%C3%A1s+informaci%C3%B3n+sobre+un+CD."
+                    target="_blank"><i class="fab fa-whatsapp icon-info"></i></a>
+                <p class="info-text text-light">Contactanos por Whatsapp ante cualquier consulta</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer">
+            <h3>SOMOS GUASONES</h3>
+
+
+            <p> Una banda de rock argentina,formada en 1992 en la ciudad de La Plata. Con el fin de brindarle a
+                los fans un lugar para descubrir y comprar
+                nuestra discografia completa. Ofrecemos una experiencia de compra y devolución ante cualquier
+                inconveniente.
+            </p>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/guasonesoficial" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/guasones/?hl=es" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCTOipHqT5t0oxrR3eAKVtAw"><i
+                            class=" fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                Copyright &copy; 2021 Guasones<span>
+                    MusicShop</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <button id="btnTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/validations.js"></script>
+</body>
+
+</html>
